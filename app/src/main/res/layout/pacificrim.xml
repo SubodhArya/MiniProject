@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/cardview_light_background"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/streampr"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@android:style/Widget.DeviceDefault.Light.RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/streampr"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="11dp"
+        android:numStars="5" />
+
+    <TextView
+        android:id="@+id/kk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ratingBar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/ratingBar"
+        android:layout_marginBottom="31dp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/ratingBar"
+
+        android:text="Watch full movie here:" />
+
+    <TextView
+        android:id="@+id/cpr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:text="PACIFIC RIM ONLINE"
+        android:layout_alignBaseline="@+id/fav1"
+        android:layout_alignBottom="@+id/fav1"
+        android:layout_alignLeft="@+id/kk"
+        android:layout_alignStart="@+id/kk" />
+
+    <Button
+        android:id="@+id/fav1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/kk"
+        android:layout_toEndOf="@+id/ratingBar"
+        android:layout_toRightOf="@+id/ratingBar"
+        android:onClick="onPR"
+        android:text="Add to wishlist" />
+
+
+</RelativeLayout>

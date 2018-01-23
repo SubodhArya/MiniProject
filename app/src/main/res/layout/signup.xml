@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="336dp"
+        android:layout_height="125dp"
+        android:layout_weight="0.02"
+        android:fontFamily="cursive"
+        android:text="Thanks for choosing MOVIE BOX!                                                  Sign up for unlimited fun"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorLink="@color/colorAccent"
+        android:textIsSelectable="true"
+        android:textColor="@color/colorAccent"/>
+
+    <EditText
+        android:id="@+id/Sname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_weight="0.07"
+        android:ems="10"
+        android:hint="Enter Name"
+
+        android:textColorHint="@color/colorPrimaryDark"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/SDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter DOB(DD-MM-YYYY)"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/Sname"
+        android:textColorHint="@color/colorPrimaryDark"
+
+        android:layout_alignLeft="@+id/Sname"
+        android:layout_alignStart="@+id/Sname" />
+
+    <EditText
+        android:id="@+id/Spass1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColorHint="@color/colorPrimaryDark"
+
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/Semail"
+        android:layout_alignLeft="@+id/Semail"
+        android:layout_alignStart="@+id/Semail" />
+
+    <EditText
+        android:id="@+id/Spass2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Re-enter password"
+        android:textColorHint="@color/colorPrimaryDark"
+
+        android:inputType="textPassword"
+        android:layout_below="@+id/Spass1"
+        android:layout_alignLeft="@+id/Spass1"
+        android:layout_alignStart="@+id/Spass1" />
+
+    <Button
+        android:id="@+id/signup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Spass2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:onClick="onCreateButton"
+        android:text="CREATE ACCOUNT" />
+
+    <EditText
+        android:id="@+id/Semail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SDOB"
+        android:layout_alignStart="@+id/SDOB"
+        android:layout_below="@+id/SDOB"
+        android:ems="10"
+        android:hint="Enter email ID"
+        android:textColorHint="@color/colorPrimaryDark"
+
+        android:inputType="textPersonName" />
+</RelativeLayout>

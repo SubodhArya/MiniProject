@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tvsck"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tvsk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            android:orientation="vertical">
+
+
+            <ImageButton
+                android:id="@+id/sri"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:onClick="onButtonClick"
+                android:src="@drawable/sri" />
+
+            <ImageButton
+                android:id="@+id/nannaku"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:onClick="onNPTClick"
+                android:src="@drawable/nannaku" />
+
+            <ImageButton
+                android:id="@+id/expr"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:onClick="onERClick"
+                android:src="@drawable/expr" />
+
+            <ImageButton
+                android:id="@+id/nenu"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:onClick="onNSClick"
+                android:src="@drawable/nenu" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

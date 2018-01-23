@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/cardview_light_background"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/streamns"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <RatingBar
+        android:id="@+id/ratingBarns"
+        style="@android:style/Widget.DeviceDefault.Light.RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/streamns"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="11dp"
+        android:numStars="3" />
+
+    <TextView
+        android:id="@+id/kkns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+
+        android:text="Watch full movie here:"
+        android:layout_below="@+id/ratingBarns"
+        android:layout_alignLeft="@+id/ratingBarns"
+        android:layout_alignStart="@+id/ratingBarns"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/cpr7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NENU SAILAJA ONLINE"
+        android:layout_below="@+id/kkns"
+        android:layout_alignRight="@+id/kkns"
+        android:layout_alignEnd="@+id/kkns"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/fav8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cpr7"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:onClick="onPR"
+        android:text="ADD TO WISHLIST" />
+
+
+</RelativeLayout>

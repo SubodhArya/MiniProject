@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.suman.miniproject">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/mb"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Display" />
+        <activity android:name=".Signup" />
+        <activity
+            android:name=".Welcome"
+            android:label="@string/title_activity_welcome"
+            android:parentActivityName=".Display"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.suman.miniproject.Display" />
+        </activity>
+        <activity android:name=".BVSM"/>
+
+        <activity
+            android:name=".English"
+            android:label="@string/title_activity_english"
+            android:parentActivityName=".Welcome"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.suman.miniproject.Welcome" />
+        </activity>
+        <activity
+            android:name=".Telugu"
+
+            android:parentActivityName=".Welcome"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.suman.miniproject.Welcome" />
+        </activity>
+        <activity android:name=".ASM"/>
+        <activity android:name=".Anabelle">
+
+
+        </activity>
+        <activity android:name=".Srimanthudu"/>
+        <activity android:name=".NPT"/>
+        <activity android:name=".ER"/>
+        <activity android:name=".NS"/>
+        <activity android:name=".Dangal"/>
+        <activity android:name=".JL"/>
+        <activity android:name=".BH"/>
+        <activity android:name=".BB"/>
+        <activity android:name=".Mains"/>
+<activity android:name=".ResetPasswordActivity"/>
+<activity android:name=".Fav"/>
+        
+       <activity android:name=".GOT"/>
+        <activity android:name=".THI"/>
+        <activity
+            android:name=".Hindi"
+
+            android:parentActivityName=".Welcome"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.suman.miniproject.Welcome" />
+        </activity>
+        <activity android:name=".PacificRim"/>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".SignupActivity"/>
+
+        <receiver android:name=".AlarmReceiver" />
+
+        <service android:name=".RingtonePlayingService"
+            android:enabled="true">
+        </service>
+    </application>
+
+</manifest>

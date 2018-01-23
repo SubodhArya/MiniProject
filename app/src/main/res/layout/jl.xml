@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/cardview_light_background"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/streamjl"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <RatingBar
+        android:id="@+id/ratingBarjl"
+        style="@android:style/Widget.DeviceDefault.Light.RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/streamjl"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="11dp"
+        android:numStars="4" />
+
+    <TextView
+        android:id="@+id/kkl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+
+        android:text="Watch full movie here:"
+        android:layout_below="@+id/ratingBarjl"
+        android:layout_alignLeft="@+id/ratingBarjl"
+        android:layout_alignStart="@+id/ratingBarjl"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/cpr9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JOLLY LLB2  ONLINE"
+        android:layout_below="@+id/kkl"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp"
+        android:layout_alignRight="@+id/kkl"
+        android:layout_alignEnd="@+id/kkl" />
+
+    <Button
+        android:id="@+id/fav10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/kkl"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:onClick="onPR"
+        android:text="ADD TO WISHLIST" />
+
+
+</RelativeLayout>
